@@ -11,7 +11,8 @@ curl -fsSL https://ollama.com/install.sh | sh
 ```bash
 du -sh /workspace/*
 ```
-```
+
+```bash
 du -sh /workspace/* | sort -rh
 ```
 
@@ -33,6 +34,7 @@ source ~/.bashrc
 ```
 
 - Unsloth Instalation on Colab
+
 ```bash
 pip install unsloth
 # Also get the latest nightly Unsloth!
