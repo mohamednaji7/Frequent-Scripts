@@ -44,3 +44,10 @@ pip install unsloth
 # Also get the latest nightly Unsloth!
 pip install --force-reinstall --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git'
 ```
+
+- Colab unsign
+```python
+from google.colab import runtime
+
+runtime.unassign()
+``` 
