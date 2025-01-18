@@ -16,6 +16,10 @@ du -sh /workspace/*
 du -sh /workspace/* | sort -rh
 ```
 
+```bash
+export VAR=
+```
+
 ```python
 import os
 # WANDB_KEY, HF_TOKEN
