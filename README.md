@@ -17,6 +17,10 @@ du -sh /workspace/* | sort -rh
 ```
 
 ```bash
+ls /root/.cache/huggingface/
+```
+
+```bash
 export VAR=
 ```
 
