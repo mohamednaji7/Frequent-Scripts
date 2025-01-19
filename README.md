@@ -49,6 +49,10 @@ pip install unsloth
 pip install --force-reinstall --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git'
 ```
 
+```python
+model.push_to_hub_merged(saving_repo, tokenizer, save_method = "merged_16bit", token=hf_token, commit_message=commit_message)
+```
+
 - Colab unsign
 ```python
 from google.colab import runtime
