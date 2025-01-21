@@ -24,14 +24,12 @@ def download(name, revision, type, cache_dir):
 
 TOKENIZER_PATTERNS = [["*.json", "tokenizer*"]]
 MODEL_PATTERNS = [["*.safetensors"], ["*.bin"], ["*.pt"]]
-BASE_DIR = "/" 
 
 if __name__ == "__main__":
     cache_dir = os.getenv("HF_HOME")
     model_name, model_revision = os.getenv("MODEL_NAME"), os.getenv("MODEL_REVISION") or None
     tokenizer_name, tokenizer_revision = os.getenv("TOKENIZER_NAME") or model_name, os.getenv("TOKENIZER_REVISION") or model_revision
    
+   
     model_path = download(model_name, model_revision, "model", cache_dir)   
-  
-    
     tokenizer_path = download(tokenizer_name, tokenizer_revision, "tokenizer", cache_dir)
