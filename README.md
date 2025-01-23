@@ -53,9 +53,16 @@ pip install --force-reinstall --no-cache-dir --no-deps git+https://github.com/un
 model.push_to_hub_merged(saving_repo, tokenizer, save_method = "merged_16bit", token=hf_token, commit_message=commit_message)
 ```
 
+
 - Colab unsign
 ```python
 from google.colab import runtime
 
 runtime.unassign()
 ``` 
+## Rare
+```bash
+git reset --hard 123456
+git clean -fd
+git push --force
+```
